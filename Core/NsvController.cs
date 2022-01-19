@@ -7,7 +7,7 @@ using Zenject;
 using HMUI;
 using BeatSaberMarkupLanguage.Tags;
 using BeatSaberMarkupLanguage.Components.Settings;
-using SiraUtil.Tools;
+using SiraUtil.Logging;
 
 namespace SliceVisualizer.Core
 {
@@ -78,7 +78,7 @@ namespace SliceVisualizer.Core
                 slicedBlock.Dispose();
             }
         }
-        
+
         private void OnNoteCut(NoteController noteController, in NoteCutInfo noteCutInfo)
         {
             if (!_config.Enabled)
